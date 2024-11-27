@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lala Birthday GIFt Card - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Happy Birthday, <span id="name">Lala</span> 🎂</h1>
+        <img id="profile-picture" src="./assets/profile-picture.jpg" alt="A portrait of a girl holding a flower">
+        <p>23 years old</p>
+        <p>10.11.2024</p>
+    </header>
+    <main>
+        <div class="gift-wrapper">
+            <h2>Here's how happy I am for you today 🥳</h2>
+            <div class="gift-img" id="gift-1" onclick="toggleClick(this)" role="img" aria-label="A wrapped present transforms on click, revealing a family celebrating their child birthday."></div>
+        </div>
+        <div class="gift-wrapper">
+            <h2>One of your best days in 2024, I guess 😜</h2>
+            <div class="gift-img" id="gift-2" onclick="toggleClick(this)" role="img" aria-label="A wrapped present transforms on click, revealing two couples hoding their hands together."></div>
+        </div>
+        <div class="gift-wrapper">
+            <h2>Your best and new aquired word 🤔</h2>
+            <div class="gift-img" id="gift-3" onclick="toggleClick(this)" role="img" aria-label="A wrapped present transforms on click, revealing her best word Aubergine."></div>
+        </div>
+    </main>
+    <footer>
+        <pre id="poet" dir="rtl">
+            في يوم ميلادكِ، يفرح القلب بوجودكِ،
+            وفي ضحكتكِ، الدنيا كلها تبتسم،
+            أنتِ الصديقة التي تجعل الأيام أحلى،
+            وفي كل لحظة معكِ، تصبح الحياة أجمل.
+
+            كل سنة وأنتِ بخير، يا أعز صديقة،
+            وعيد ميلادكِ فرحة عمري الأبدية.
+        </pre>
+        <p>This poet made by ChatGPT 🥷.</p>
+    </footer>
+
+    <script>
+        function toggleClick(element) {
+            // Toggle the "clicked" class on click
+            element.classList.toggle('clicked');
+        }
+    </script>
+</body>
+</html>

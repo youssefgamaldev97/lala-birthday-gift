@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    background: linear-gradient(#A2D2FF, #FFAFCC);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Happy Monkey", serif;
+    color: #212529;
+}
+
+header {
+    margin: 0;
+}
+
+@keyframes name-color {
+    from {color: inherit}
+    to {color: #CDB4DB;}
+}
+
+#name {
+    border-bottom: 5px solid #FFC8DD;
+    animation-name: name-color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+#profile-picture {
+    width: 220px;
+}
+
+main {
+    margin: 40px 0 40px;
+}
+
+.gift-img {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    background-image: url("../assets/gift-cover.jpg");
+    background-size: cover;
+}
+
+#gift-1.clicked {
+    background-image: url("../assets/gift-1-gif.webp");
+}
+
+#gift-2.clicked {
+    background-image: url("../assets/gift-2-picture.jpg");
+}
+
+#gift-3.clicked {
+    background-image: url("../assets/gift-3-gif.webp");
+}
+
+footer {
+    margin: 0;
+}
+
+#poet {
+    font-size: larger;
+}
